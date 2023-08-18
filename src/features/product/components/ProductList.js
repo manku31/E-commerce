@@ -203,28 +203,46 @@ export default function ProductList() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const products = useSelector(selectAllProducts);
   const [filter, setFilter] = useState({});
+  const [sort, setSort] = useState({});
 
   // handle filter
   const handleFilter = (e, section, option) => {
-    const newFilter = { ...filter, [section.id]: option.value };
-    setFilter(newFilter);
+    const newFilter = { ...filter };
+    // TODO : on server it will suppport multiple catagers
+    if (e.target.checked) {
 
-    dispatch(fetchProductsByFiltersAsync(newFilter));
-    // console.log(section.id, option.value);
+      
+     
+      if(newFilter[section.id]) {
+
+        newFilter[section.id].push(option.value); // adding section : value in new Filter in form of array
+      }else {
+        newFilter[section.id] = [option.value];
+
+      }
+
+    } else {
+
+      const index = newFilter[section.id].findIndex((fi) => fi === option.value);
+      newFilter[section.id].splice(index, 1);   // removing section : value in new Filter from array
+
+    }
+
+    console.log({newFilter});
+
+    setFilter(newFilter);
   };
 
   // handle sorting
   const handleSort = (e, option) => {
-    const newFilter = { ...filter, _sort: option.sort, _order: option.order };
-    setFilter(newFilter);
-
-    dispatch(fetchProductsByFiltersAsync(newFilter));
-    // console.log(section.id, option.value);
+    const sort = {_sort: option.sort, _order: option.order };
+    console.log({sort});
+    setSort(sort);
   };
 
   useEffect(() => {
-    dispatch(fetchAllProductsAsync());
-  }, [dispatch]);
+    dispatch(fetchProductsByFiltersAsync({filter, sort}));
+  }, [dispatch, filter, sort]);
 
   return (
     <div className="bg-white">
@@ -322,11 +340,8 @@ export default function ProductList() {
             </div>
           </section>
 
-          
-            {/* Pagination */}
-            <Pagination></Pagination>
-          
-          
+          {/* Pagination */}
+          <Pagination></Pagination>
         </main>
       </div>
     </div>
