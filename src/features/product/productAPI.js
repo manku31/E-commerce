@@ -8,6 +8,16 @@ export function fetchAllProducts() {
   });
 }
 
+
+export function fetchProductById(id) {
+
+  return new Promise(async (resolve) => {
+    const response = await fetch("http://localhost:8080/products/"+ id);
+    const data = await response.json();
+    resolve({ data });
+  });
+}
+
 export function fetchProductsByFilters(filter, sort, pagination) {
   // filter = {"category":["smartphone", "laptop", "mobile"]} => ?category=smartphone&categeory=laptop -> url ? category = smartphone & categeory = laptop
   // sort = {_sort: "price", _order: "dec"} => ?_sort=price&_order=asc -> url ? _sort = price & _order = asc
