@@ -48,7 +48,9 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-      "images": ["https://i.dummyjson.com/data/products/3/1.jpg"]
+      "images": [
+        "https://i.dummyjson.com/data/products/3/1.jpg"
+      ]
     },
     {
       "id": 4,
@@ -1426,7 +1428,9 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
-      "images": ["https://i.dummyjson.com/data/products/78/thumbnail.jpg"]
+      "images": [
+        "https://i.dummyjson.com/data/products/78/thumbnail.jpg"
+      ]
     },
     {
       "id": 79,
@@ -1439,7 +1443,9 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
-      "images": ["https://i.dummyjson.com/data/products/79/1.jpg"]
+      "images": [
+        "https://i.dummyjson.com/data/products/79/1.jpg"
+      ]
     },
     {
       "id": 80,
@@ -2327,7 +2333,42 @@
       "label": "YIOSI",
       "checked": false
     }
+  ],
+  "users": [
+    {
+      "email": "sneha@xyz.com",
+      "password": "Ps@310320",
+      "id": 1
+    },
+    {
+      "email": "manku@xyz.com",
+      "password": "Manku@3103",
+      "id": 2
+    },
+    {
+      "email": "nidhi@xyz.com",
+      "password": "Manku@3103",
+      "id": 3
+    },
+    {
+      "email": "nidhi@xyz.com",
+      "password": "Nidhi@123456",
+      "id": 4
+    },
+    {
+      "email": "manku@xyz.com",
+      "password": "Manku@3103",
+      "id": 5
+    },
+    {
+      "email": "sneha@xyz.com",
+      "password": "Manku@3103",
+      "id": 6
+    },
+    {
+      "email": "manku@xyz.com",
+      "password": "Manku@3103",
+      "id": 7
+    }
   ]
 }
-
-
