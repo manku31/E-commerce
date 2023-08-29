@@ -39,7 +39,7 @@ export default function Signup() {
             className="space-y-6"
             onSubmit={handleSubmit((data) => {
               dispatch(
-                createUserAsyn({ email: data.email, password: data.password })
+                createUserAsyn({ email: data.email, password: data.password, addresses:[] })
               );
               console.log(data);
             })}
