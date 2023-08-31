@@ -6,12 +6,13 @@ import {
   updateCartAsync,
   deleteItemFromCartAsync,
 } from "../features/cart/cartSlice";
-import { createOrderAsync } from "../features/order/orderSlice";
+import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
 import {
   selectLoggedInUser,
   updateUserAsync,
 } from "../features/auth/authSlice";
 import { useForm } from "react-hook-form";
+
 
 function Checkout() {
   const [open, setOpen] = useState(true);
@@ -26,6 +27,7 @@ function Checkout() {
 
   const user = useSelector(selectLoggedInUser);
   const items = useSelector(selectItems);
+  const currentOrder = useSelector(selectCurrentOrder);
 
   const totalAmout = items.reduce(
     (amount, item) => item.price * item.quantity + amount,
@@ -64,6 +66,7 @@ function Checkout() {
       user,
       paymentMethod,
       selectAddress,
+      status: "pending"
     };
     dispatch(createOrderAsync(order));
 
@@ -75,6 +78,7 @@ function Checkout() {
   return (
     <>
       {!items.length && <Navigate to={`/`} replace={true}></Navigate>}
+      {currentOrder && <Navigate to={`/order-success/${currentOrder.id}`} replace={true}></Navigate>}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
           <div className="lg:col-span-3">

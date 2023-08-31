@@ -49,3 +49,19 @@ export function deleteItemFromCart(itemId) {
     resolve({ data: { id: itemId } });
   });
 }
+
+// for reset the cart be use the above function fetchItemByUserId() and deleteItemFromCart()
+export function resetCart(userId) {
+  //TODO : we will not hard-code server URL here
+  return new Promise(async (resolve) => {
+    const response = await fetchItemByUserId(userId);
+    const items = response.data;
+
+    // console.log(item);
+
+    for (let item of items) {
+      await deleteItemFromCart(item.id);
+    }
+    resolve({ status: "success" });
+  });
+}
