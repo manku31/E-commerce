@@ -12,6 +12,7 @@ import {
   updateUserAsync,
 } from "../features/auth/authSlice";
 import { useForm } from "react-hook-form";
+import { selectUserInfo } from "../features/user/userSlice";
 
 
 function Checkout() {
@@ -25,7 +26,7 @@ function Checkout() {
     formState: { errors },
   } = useForm();
 
-  const user = useSelector(selectLoggedInUser);
+  const user = useSelector(selectUserInfo);
   const items = useSelector(selectItems);
   const currentOrder = useSelector(selectCurrentOrder);
 

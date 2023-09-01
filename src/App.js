@@ -1,4 +1,4 @@
-import { Counter } from "./features/counter/Counter";
+import * as React from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
@@ -14,15 +14,9 @@ import { useEffect } from "react";
 import PageNotFound from "./pages/404";
 import OrderSuccessPage from "./pages/OrderSuccessPage";
 import UserOrdersPage from "./pages/UserOrdersPage";
-
-import * as React from "react";
-import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
+import UserProfilePage from "./pages/UserProfilePage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { fetchLoggedInUserAsync } from "./features/user/userSlice";
 
 const router = createBrowserRouter([
   {
@@ -82,6 +76,14 @@ const router = createBrowserRouter([
       // we will add page later right now using component directly
     ),
   },
+  {
+    path: "/profile",
+    element: (
+      <Protected>
+        <UserProfilePage />
+      </Protected>
+    ),
+  },
 ]);
 
 function App() {
@@ -91,6 +93,7 @@ function App() {
   useEffect(() => {
     if (user) {
       dispatch(fetchItemByUserIdAsync(user.id));
+      dispatch(fetchLoggedInUserAsync(user.id));
     }
   }, [dispatch, user]);
 
