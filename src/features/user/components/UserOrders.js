@@ -20,6 +20,7 @@ export default function UserOrders() {
         {orders.map((order) => (
           <div>
             {/* Start from this line */}
+            {console.log(order.selectAddress.name)}
 
             <div>
               <div className="mx-auto mt-12 bg-white max-w-7xl px-4 sm:px-6 lg:px-8">

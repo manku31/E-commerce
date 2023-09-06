@@ -2365,6 +2365,15 @@
           "city": "thane",
           "state": "maha",
           "pinCode": "123456"
+        },
+        {
+          "name": "Gaurav jha2",
+          "email": "gauravlund@gmail.com",
+          "phone": "69696969696",
+          "street": "11th main",
+          "city": "Thane",
+          "state": "Maharashtra",
+          "pinCode": "400604"
         }
       ],
       "id": 1
@@ -2757,6 +2766,246 @@
       },
       "status": "pending",
       "id": 6
+    },
+    {
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmout": 899,
+      "totalItems": 1,
+      "user": {
+        "email": "manku@xyz.com",
+        "password": "Manku@3103",
+        "addresses": [
+          {
+            "name": "Sneha Gupta",
+            "email": "sneha@xyz.com",
+            "pinCode": "400604",
+            "city": "Thane",
+            "street": "12th main",
+            "phone": "1234567890",
+            "state": "Maharashtra"
+          },
+          {
+            "name": "Sneha Gupta",
+            "email": "sneha@xyz.com",
+            "phone": "1234567890",
+            "street": "12th main",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "pinCode": "400604"
+          },
+          {
+            "name": "Jack",
+            "email": "jack@xyz.com",
+            "phone": "1234567890",
+            "street": "11th main",
+            "city": "thane",
+            "state": "maha",
+            "pinCode": "123456"
+          },
+          {
+            "name": "Gaurav jha2",
+            "email": "gauravlund@gmail.com",
+            "phone": "69696969696",
+            "street": "11th main",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "pinCode": "400604"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectAddress": {
+        "name": "Gaurav jha2",
+        "email": "gauravlund@gmail.com",
+        "phone": "69696969696",
+        "street": "11th main",
+        "city": "Thane",
+        "state": "Maharashtra",
+        "pinCode": "400604"
+      },
+      "status": "pending",
+      "id": 7
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmout": 1499,
+      "totalItems": 1,
+      "user": {
+        "email": "manku@xyz.com",
+        "password": "Manku@3103",
+        "addresses": [
+          {
+            "name": "Sneha Gupta",
+            "email": "sneha@xyz.com",
+            "pinCode": "400604",
+            "city": "Thane",
+            "street": "12th main",
+            "phone": "1234567890",
+            "state": "Maharashtra"
+          },
+          {
+            "name": "Sneha Gupta",
+            "email": "sneha@xyz.com",
+            "phone": "1234567890",
+            "street": "12th main",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "pinCode": "400604"
+          },
+          {
+            "name": "Jack",
+            "email": "jack@xyz.com",
+            "phone": "1234567890",
+            "street": "11th main",
+            "city": "thane",
+            "state": "maha",
+            "pinCode": "123456"
+          },
+          {
+            "name": "Gaurav jha2",
+            "email": "gauravlund@gmail.com",
+            "phone": "69696969696",
+            "street": "11th main",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "pinCode": "400604"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectAddress": {
+        "name": "Sneha Gupta",
+        "email": "sneha@xyz.com",
+        "phone": "1234567890",
+        "street": "12th main",
+        "city": "Thane",
+        "state": "Maharashtra",
+        "pinCode": "400604"
+      },
+      "status": "pending",
+      "id": 8
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmout": 1249,
+      "totalItems": 1,
+      "user": {
+        "email": "manku@xyz.com",
+        "password": "Manku@3103",
+        "addresses": [
+          {
+            "name": "Sneha Gupta",
+            "email": "sneha@xyz.com",
+            "pinCode": "400604",
+            "city": "Thane",
+            "street": "12th main",
+            "phone": "1234567890",
+            "state": "Maharashtra"
+          },
+          {
+            "name": "Sneha Gupta",
+            "email": "sneha@xyz.com",
+            "phone": "1234567890",
+            "street": "12th main",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "pinCode": "400604"
+          },
+          {
+            "name": "Jack",
+            "email": "jack@xyz.com",
+            "phone": "1234567890",
+            "street": "11th main",
+            "city": "thane",
+            "state": "maha",
+            "pinCode": "123456"
+          },
+          {
+            "name": "Gaurav jha2",
+            "email": "gauravlund@gmail.com",
+            "phone": "69696969696",
+            "street": "11th main",
+            "city": "Thane",
+            "state": "Maharashtra",
+            "pinCode": "400604"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectAddress": {
+        "name": "Gaurav jha2",
+        "email": "gauravlund@gmail.com",
+        "phone": "69696969696",
+        "street": "11th main",
+        "city": "Thane",
+        "state": "Maharashtra",
+        "pinCode": "400604"
+      },
+      "status": "pending",
+      "id": 9
     }
   ]
 }
